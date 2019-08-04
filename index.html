@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS Multiplayer</title>
+    <!-- BootStrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center mr-4">Let's get reeeeeady toooo </h1>
+                <h2 class="text-center ml-5">Rock Paper Scisssssooooorssssssss!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 bg-primary">
+                <h1 class="text-center">Player 1</h1>
+                <div class="row">
+                    <div class="col-sm-12 bg-success">
+                        <div class="p1-select">
+                            <h2 class="text-center">R</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 bg-warning text-center">
+                        <img class="Rock">
+                        <h3>Rock</h3>
+                    </div>
+                    <div class="col-sm-4 bg-danger text-center">
+                        <img class="Paper">
+                        <h3>Paper</h3>
+                    </div>
+                    <div class="col-sm-4 bg-warning text-center">
+                        <img class="Scissors">
+                        <h3>Scissors</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 bg-secondary">
+                <h1 class="text-center">Player 1 wins!</h1>
+
+            </div>
+            <div class="col-sm-5 bg-warning">
+                <h1 class="text-center">Player 2</h1>
+                <div class="row">
+                    <div class="col-sm-12 bg-danger">
+                        <div class="p2-select">
+                            <h2 class="text-center">S</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 bg-primary text-center">
+                        <img class="Rock">
+                        <h3>Rock</h3>   
+                    </div>
+                    <div class="col-sm-4 bg-secondary text-center">
+                        <img class="Paper">
+                        <h3>Paper</h3>
+                    </div>
+                    <div class="col-sm-4 bg-primary text-center">
+                        <img class="Scissors">
+                        <h3>Scissors</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
